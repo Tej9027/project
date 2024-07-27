@@ -5,7 +5,6 @@ This project is a web application for document summarization that allows users t
 ## Table of Contents
 
 - [Project Setup](#project-setup)
-- [Challenges Faced](#challenges-faced)
 - [Instructions to Run Locally](#instructions-to-run-locally)
 - [Docker Setup](#docker-setup)
   
@@ -24,24 +23,6 @@ The backend is developed with Flask, which handles file uploads and processes th
 - **Frontend**: React, HTML, CSS, JavaScript
 - **Backend**: Flask, PyMuPDF, PyTorch, Transformers, Flask-CORS
 - **Docker**: Used for containerization to ensure consistency across environments
-
-## Challenges Faced
-
-### 1. Dependency Management
-
-One of the initial challenges was ensuring that all dependencies, especially those required by the GPT-2 model and PDF parsing, were correctly installed and compatible. Managing Python dependencies inside Docker required careful attention to the base image and libraries used.
-
-### 2. PDF Text Extraction
-
-Extracting text from PDFs proved to be challenging due to the variety of formats and encodings in PDF files. Using PyMuPDF helped in extracting text more reliably, but it required additional handling for various PDF structures.
-
-### 3. Model Size and Performance
-
-Using the GPT-2 model for summarization was computationally intensive, requiring careful management of resources to avoid timeouts and memory issues during processing.
-
-### 4. Docker Configuration
-
-Configuring Docker for both frontend and backend services involved ensuring that all necessary files and dependencies were correctly copied and installed, while also optimizing the build process to minimize the size and build time of images.
 
 ## Instructions to Run Locally
 
